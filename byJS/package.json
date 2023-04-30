@@ -1,0 +1,20 @@
+{
+  "name": "xushuodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build-python": "pyinstaller -D -p ./xushuodb/Lib/site-packages flasks.py --add-data=static;static --add-data=templates;templates --distpath ./pydist",
+    "pack-app": "electron-packager . --overwrite --ignore=py$ --arch=x64 --download.mirrorOptions.mirror=https://npm.taobao.org/mirrors/electron/"
+  },
+  "author": "XuShuo",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^21.2.0",
+    "python-shell": "^3.0.1"
+  },
+  "devDependencies": {
+    "electron-packager": "^15.4.0"
+  }
+}

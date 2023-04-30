@@ -1,0 +1,114 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.out {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.out .left {
+  height: 100%;
+  width: 200px;
+  box-shadow: inset -12px -8px 8px -8px #ccc;
+}
+.out .left .left_top {
+  height: 100px;
+  width: 100%;
+  color: #333;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+  line-height: 100px;
+}
+.out .left .left_bottom {
+  padding-top: 16px;
+  height: calc(100% - 100px);
+  width: 100%;
+  overflow: auto;
+  font-weight: bold;
+  font-size: 20px;
+}
+.out .left .left_bottom .left_bottom_item {
+  margin-left: 10px;
+  padding-left: 56px;
+  height: 50px;
+  width: calc(100% - 10px);
+  line-height: 50px;
+  border-radius: 16px 0 0 16px;
+  cursor: pointer;
+}
+.out .left .left_bottom .left_bottom_item:hover {
+  background: #eee;
+}
+.out .left .left_bottom .on {
+  box-shadow: 0 0 8px 4px #ccc;
+  background: #03a9f4;
+}
+.out .left .left_bottom .on:hover {
+  background: #2196f3;
+}
+.out .right {
+  height: 100%;
+  width: calc(100% - 200px);
+  border-left: 6px solid #03a9f4;
+}
+.out .right .title {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid #3f51b5;
+}
+.out .right .title .title_inner {
+  padding-left: 12px;
+  transform: translate(0, -50%);
+  position: relative;
+  top: 50%;
+  height: 20px;
+  border-left: 6px solid #03a9f4;
+}
+.out .right .title .title_inner p {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  transform: translate(0, -50%);
+  position: relative;
+  top: 40%;
+}
+.out .right .select {
+  margin: 12px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-flow: wrap;
+}
+.out .right .select .button {
+  margin: 12px 16px 12px 0;
+  background-color: #03a9f4;
+  border-radius: 8px;
+  padding: 8px 12px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.out .right .select .button:hover {
+  background: #2196f3;
+}
+.out .right .select .on {
+  background: #8bc34a;
+}
+.out .right .select .on:hover {
+  background: #4caf50;
+}
+.out .right .right_inner {
+  display: none;
+  margin: 40px;
+  width: calc(100% - 80px);
+  height: calc(100% - 80px);
+}
+.out .right .nowselect {
+  display: block !important;
+}
